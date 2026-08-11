@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* background-color: rgb(149, 149, 243); */
+}
+
+.upGap{margin-top: 10px;}
+.bdr{border: 1px solid black;}
+
+

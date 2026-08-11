@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- stylesheet css -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- signup -->
+    <div class="container">
+        <h1>Sign-Up</h1>
+        <form action="" onsubmit="signup(event)">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="enter name here">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="enter email here">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" placeholder="enter password here">
+            </div>
+                
+            <button type="submit">Signup</button>
+                
+        </form>
+
+        
+    </div>
+
+    
+    <!-- login -->
+    <div class="container">
+        <h1>Login</h1>
+        <form action="" onsubmit="login(event)">
+            <div class="form-group">
+                <label for="email">email</label><br>
+                <input type="email" id="loginEmail" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="password">password</label><br>
+                <input type="password" id="loginPassword" placeholder="password">
+            </div>
+            <button type="submit">login</button>
+        </form>
+    </div>
+
+    <!-- delete-user -->
+     <form action="" id="myForm" onsubmit="deleteUser(event)">
+        <h1>Delete-User</h1>
+        <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="deleteEmail" placeholder="enter email here">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" placeholder="enter password here">
+            </div>
+                
+            <button type="submit">Delete</button>
+     </form>
+
+    <!-- copy -->
+    <!-- <form onsubmit="loginUser(event)">
+    <input type="email" id="loginEmail" placeholder="Email">
+
+    <input type="password" id="loginPassword" placeholder="Password">
+
+    <button type="submit">Login</button>
+</form> -->
+
+
+    
+<script src="script.js" defer></script>
+</body>
+</html>
