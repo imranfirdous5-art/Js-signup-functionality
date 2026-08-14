@@ -39,7 +39,7 @@
     <!-- login -->
     <div class="container">
         <h1>Login</h1>
-        <form action="" onsubmit="login(event)">
+        <form action="" id="loginForm" onsubmit="login(event)">
             <div class="form-group">
                 <label for="email">email</label><br>
                 <input type="email" id="loginEmail" placeholder="email">
@@ -53,7 +53,7 @@
     </div>
 
     <!-- delete-user -->
-     <form action="" id="myForm" onsubmit="deleteUser(event)">
+     <form action="" id="deleteForm" onsubmit="deleteUser(event)">
         <h1>Delete-User</h1>
         <div class="form-group">
                 <label for="email">Email:</label><br>
@@ -61,7 +61,7 @@
             </div>
             <div class="form-group">
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" placeholder="enter password here">
+                <input type="password" id="deletePassword" placeholder="enter password here">
             </div>
                 
             <button type="submit">Delete</button>

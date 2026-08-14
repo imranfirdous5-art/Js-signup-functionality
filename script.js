@@ -58,6 +58,8 @@ function login(e) {
     } else {
         alert("Invalid email or password");
     }
+
+    document.getElementById('loginForm').reset()
 }
 
 
@@ -66,19 +68,35 @@ function deleteUser(e) {
     e.preventDefault();
 
     const deleteEmail = document.getElementById('deleteEmail').value;
-    
+    const deletePassword = document.getElementById('deletePassword').value;
 
+     
     let usersList = JSON.parse(localStorage.getItem('allUsers')) || [];
     
-    // मैच होने वाले ईमेल को लिस्ट से हटा दिया
-    usersList = usersList.filter(user => user.email !== deleteEmail);
     
+    const existUser = usersList.find(user => user.email === deleteEmail);
+
+    if(!existUser){
+        alert('email not found');
+        document.getElementById('deleteForm').reset();
+        return;
+        
+    }if(existUser.password !== deletePassword){
+        alert('password not match');
+        document.getElementById('deleteForm').reset();
+
+        return;
+    }
+
+    // मैच होने वाले ईमेल को लिस्ट से हटा दिया
+    const updatedList = usersList.filter(user => user.email !== deleteEmail);
+
     
     // नई लिस्ट वापस सेव कर दी
-    localStorage.setItem('allUsers', JSON.stringify(usersList));
+    localStorage.setItem('allUsers', JSON.stringify(updatedList));
     
-    alert("यूजर डिलीट हो गया!");
-    document.getElementById('myForm').reset();
+    alert("user deleted");
+    document.getElementById('deleteForm').reset();
 }
 
 
