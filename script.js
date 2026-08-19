@@ -49,18 +49,20 @@ function login(e) {
 
     const usersList = JSON.parse(localStorage.getItem("allUsers")) || [];
 
-    const user = usersList.find(
-        user => user.email === email && user.password === password
-    );
+    const user = usersList.find(user => user.email === email && user.password === password);
 
     if (user) {
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
+        window.location.href = 'dashboard.html';
         alert("Login successful!");
+
     } else {
         alert("Invalid email or password");
     }
 
     document.getElementById('loginForm').reset()
 }
+
 
 
 // ---- 3. डेटा डिलीट करने का फंक्शन (डिलीट बटन दबने पर चलेगा) ----
