@@ -1,6 +1,5 @@
 const userLogin = JSON.parse(localStorage.getItem("loggedInUser"));
 
-
 if (userLogin) {
     document.getElementById("greeting").textContent =
     `${userLogin.email}`;
@@ -10,7 +9,9 @@ if (userLogin) {
 
 // ---- logout karne k liye ------
 function logout() {
+    // (removeItem) se loggedInUser wali entry delete karta hai.
     localStorage.removeItem("loggedInUser");
 
     window.location.href = "index.html";
 }
+

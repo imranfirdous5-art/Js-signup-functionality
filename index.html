@@ -12,7 +12,7 @@
 <body>
     
     <!-- signup -->
-    <div class="container">
+    <!-- <div class="container">
         <h1>Sign-Up</h1>
         <form action="" onsubmit="signup(event)">
             <div class="form-group">
@@ -29,17 +29,18 @@
             </div>
                 
             <button type="submit">Signup</button>
-                
         </form>
+    </div> -->
 
-        
-    </div>
 
     
+
+    
+       
 
     
     <!-- login -->
-    <div class="container">
+    <!-- <div class="container">
         <h1>Login</h1>
         <form action="" id="loginForm" onsubmit="login(event)">
             <div class="form-group">
@@ -52,10 +53,17 @@
             </div>
             <button type="submit">login</button>
         </form>
-    </div>
+    </div> -->
+
+    
+
+    
+
+
+
 
     <!-- delete-user -->
-     <form action="" id="deleteForm" onsubmit="deleteUser(event)">
+     <!-- <form action="" id="deleteForm" onsubmit="deleteUser(event)">
         <h1>Delete-User</h1>
         <div class="form-group">
                 <label for="email">Email:</label><br>
@@ -67,16 +75,54 @@
             </div>
                 
             <button type="submit">Delete</button>
-     </form>
+     </form> -->
 
-    <!-- copy -->
-    <!-- <form onsubmit="loginUser(event)">
-    <input type="email" id="loginEmail" placeholder="Email">
+     
 
-    <input type="password" id="loginPassword" placeholder="Password">
 
-    <button type="submit">Login</button>
-</form> -->
+
+
+
+    <!-- addToCart -->
+    <div class="product">
+        <h2>iPhone</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCZ-HntaioeZeP0YOQfTQ2fh6iBz5ULPdGIBaEqk0GA&s=10" alt="iphone" width="100px">
+        <p>Price: ₹50,000</p>
+
+        <button onclick="addToCart(
+            'iPhone',
+            50000,
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCZ-HntaioeZeP0YOQfTQ2fh6iBz5ULPdGIBaEqk0GA&s=10'
+            )">
+            Add to Cart
+        </button>
+    </div>
+
+
+
+    <div class="product">
+    
+        <h2>Samsung</h2>
+        <p>Price: ₹30,000</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80vXX3Xo2NT9aZQiZyze4NOedEg-253hza7RggpDHuw&s=10" alt="samsung" width="100px">
+
+        <button onclick="addToCart(
+            'Samsung',
+            30000,
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80vXX3Xo2NT9aZQiZyze4NOedEg-253hza7RggpDHuw&s=10'
+            )">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <h2>nokia</h2>
+        <p>Price: ₹20,000</p>
+
+        <button onclick="addToCart('nokia', 20000)">
+            Add to Cart
+        </button>
+    </div>
 
 
     

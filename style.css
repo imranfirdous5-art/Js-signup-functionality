@@ -10,3 +10,17 @@
 .bdr{border: 1px solid black;}
 
 .straight{display: flex; flex-direction: row; align-items: center; justify-content: space-between; border: 1px solid black;}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 14px 15px;
+}
+
+.cartStyle{
+    border: 1px solid black;
+    width: 50%;
+    margin-bottom: 10px;
+}
