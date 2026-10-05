@@ -24,3 +24,60 @@
     width: 50%;
     margin-bottom: 10px;
 }
+
+
+/* dropdown */
+/* Navbar ke basic styles */
+.navbar {
+  list-style: none;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+}
+
+.navbar > li {
+  position: relative; /* Yeh zaroori hai taaki dropdown iske hisab se align ho */
+}
+
+.navbar a {
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* --- Dropdown Ka Magic --- */
+
+/* 1. Shuruat mein dropdown menu ko chhipao */
+.dropdown-menu {
+  display: none;
+  position: absolute; /* Isse menu baaki content ke upar float karega */
+  top: 100%; /* Parent li ke theek neeche dikhane ke liye */
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sunder shadow ke liye */
+}
+
+/* Dropdown ke andar ke links ka style */
+.dropdown-menu a {
+  color: #333;
+  padding: 12px 16px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* 2. JAISE HI LI PAR HOVER HO, DROPDOWN DIKHAO */
+.dropdown-item:hover .dropdown-menu {
+  display: block;
+}
+
+.arrange{display: flex; flex-direction: row; list-style: none; gap: 5px;}
