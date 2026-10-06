@@ -195,7 +195,7 @@
 // addtocart function
 // Function values receive karta hai
 function addToCart(name, price, image) {
-
+    
     // localStorage mein jo cart pehle se saved hai, usko JavaScript ke andar lana.
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -212,7 +212,6 @@ function addToCart(name, price, image) {
 
     // localStorage me save
     localStorage.setItem("cart", JSON.stringify(cart));
-
     // Kyuki localStorage directly array/object store nahi karta, isliye:
     // JSON.stringify(cart)  ---ka use hota hai
 

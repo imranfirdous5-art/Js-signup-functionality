@@ -119,10 +119,11 @@
 
 
     <!-- addToCart -->
+     <div class="productWrap">
     <div class="product">
         <h2>iPhone</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCZ-HntaioeZeP0YOQfTQ2fh6iBz5ULPdGIBaEqk0GA&s=10" alt="iphone" width="100px">
         <p>Price: ₹50,000</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCZ-HntaioeZeP0YOQfTQ2fh6iBz5ULPdGIBaEqk0GA&s=10" alt="iphone">
 
         <!-- Button se product ki details bhejna -->
         <button onclick="addToCart(
@@ -138,7 +139,7 @@
     
         <h2>Samsung</h2>
         <p>Price: ₹30,000</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80vXX3Xo2NT9aZQiZyze4NOedEg-253hza7RggpDHuw&s=10" alt="samsung" width="100px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80vXX3Xo2NT9aZQiZyze4NOedEg-253hza7RggpDHuw&s=10" alt="samsung"><br>
 
         <button onclick="addToCart(
             'Samsung',
@@ -150,12 +151,17 @@
     </div>
 
     <div class="product">
-        <h2>nokia</h2>
-        <p>Price: ₹20,000</p>
-
-        <button onclick="addToCart('nokia', 20000)">
+        <h2>Nokia</h2>
+        <p>Price: ₹1200</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJt40cd929YHqg_8yVWNjOLSCHcBtsjw6qxYdANgKrFw&s=10" alt="nokia"><br>
+        <button onclick="addToCart(
+            'nokia',
+             1200,
+             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJt40cd929YHqg_8yVWNjOLSCHcBtsjw6qxYdANgKrFw&s=10'
+             )">
             Add to Cart
         </button>
+    </div>
     </div>
 
     <!-- <nav>

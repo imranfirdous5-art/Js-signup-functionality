@@ -2,6 +2,8 @@ const cartContainer = document.getElementById("cartContainer");
 
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+document.getElementById("count-items").innerText = cart.length;
+
 cartContainer.innerHTML = cart.map(product => `
     <div class='cartStyle'>
         <h2>Brand: ${product.name}</h2>
