@@ -19,12 +19,6 @@
     padding: 14px 15px;
 }
 
-.cartStyle{
-    border: 1px solid black;
-    width: 50%;
-    margin-bottom: 10px;
-}
-
 
 .productWrap{
   display: flex;
@@ -45,6 +39,8 @@
   height: 100px;
   object-fit: contain;
 }
+
+
 
 /* dropdown */
 /* Navbar ke basic styles */
