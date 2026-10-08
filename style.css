@@ -20,7 +20,7 @@
 }
 
 
-.productWrap{
+/* .productWrap{
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -38,7 +38,7 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
-}
+} */
 
 
 
@@ -97,3 +97,7 @@
 }
 
 .arrange{display: flex; flex-direction: row; list-style: none; gap: 5px;}
+
+.line{
+  border: 1px solid black;
+}
