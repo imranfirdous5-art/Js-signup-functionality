@@ -221,7 +221,7 @@
 // }
 
 function addToCart(name, price, image){
-     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const product = {
         name: name,
         price: price,
