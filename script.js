@@ -37,35 +37,32 @@
 
 // }
 
-    function signup(e){
-        e.preventDefault();
+function signup(e){
+    e.preventDefault();
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-        const newUser = {name, email, password};
+    const newUser = {name, email, password};
 
-        const usersList = JSON.parse(localStorage.getItem('allUsers')) || [];
+    const usersList = JSON.parse(localStorage.getItem('allUsers')) || [];
 
-        const existingUser = usersList.find(user => user.email === email);
-        if(existingUser){
-            alert('email already exist');
-            return;
-        }
-
-        usersList.push(newUser);
-
-        localStorage.setItem('allUsers', JSON.stringify(usersList));
-
-        alert('signup successfully');
-        e.target.reset();
+    const existingUser = usersList.find(user => user.email === email);
+    if(existingUser){
+        alert('email already exist');
+        return;
     }
 
+    usersList.push(newUser);
+
+    localStorage.setItem('allUsers', JSON.stringify(usersList));
+    alert('signup successfully');
+    e.target.reset();
+
+}
+
     
-
-
-
 // ---- 2. login function --------
 // function login(e) {
 //     e.preventDefault();
@@ -120,12 +117,9 @@
 
         alert('login successfully');
 
-        localStorage.setItem('loggedInUser',JSON.stringify(user));
-
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
         window.location.href = 'dashboard.html'
-        e.target.reset;
-
-
+        e.target.reset();
     }
 
 
@@ -222,16 +216,21 @@
 
 function addToCart(name, price, image){
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
     const product = {
         name: name,
         price: price,
         image: image
-    }
+    };
+
     cart.push(product);
+
     localStorage.setItem('cart', JSON.stringify(cart));
-    alert('product added successfully');
+
+    alert('product add ho gaya hai');
     window.location.href = 'addToCart.html';
 }
+
 
 
 

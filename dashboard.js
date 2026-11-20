@@ -19,8 +19,7 @@
 
 const userLogin = JSON.parse(localStorage.getItem('loggedInUser'));
 if(userLogin){
-    document.getElementById('greeting').textContent = `${userLogin.email}`;
-
+    document.getElementById('greet').textContent = `welcome: ${userLogin.name}`
 }
 
 function logout(){
